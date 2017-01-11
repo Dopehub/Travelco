@@ -14,9 +14,7 @@ class SignInViewController: UIViewController,GIDSignInUIDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         GIDSignIn.sharedInstance().uiDelegate = self
-        GIDSignIn.sharedInstance().signIn()
     }
 
     override func didReceiveMemoryWarning() {
