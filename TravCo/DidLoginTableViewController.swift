@@ -13,7 +13,6 @@ class DidLoginTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
