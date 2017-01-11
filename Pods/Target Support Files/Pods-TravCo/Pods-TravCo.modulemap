@@ -1,0 +1,6 @@
+framework module Pods_TravCo {
+  umbrella header "Pods-TravCo-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,26 +1,93 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ai5-Pf-CXa">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Sign In View Controller-->
+        <scene sceneID="PmO-Wk-1o2">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ai5-Pf-CXa" customClass="SignInViewController" customModule="TravCo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="hae-mP-mqJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="p7W-Dk-MUb"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="IoQ-ce-4RJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQB-0c-yag" customClass="GIDSignInButton">
+                                <rect key="frame" x="67" y="269" width="240" height="66"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gQB-0c-yag" firstAttribute="leading" secondItem="IoQ-ce-4RJ" secondAttribute="leadingMargin" constant="51" id="8oU-uA-51j"/>
+                            <constraint firstItem="p7W-Dk-MUb" firstAttribute="top" secondItem="gQB-0c-yag" secondAttribute="bottom" constant="332" id="LXo-Q5-eaS"/>
+                            <constraint firstItem="gQB-0c-yag" firstAttribute="centerX" secondItem="IoQ-ce-4RJ" secondAttribute="centerX" id="Mrt-vd-h2C"/>
+                            <constraint firstItem="gQB-0c-yag" firstAttribute="top" secondItem="hae-mP-mqJ" secondAttribute="bottom" constant="249" id="mvB-tc-E89"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <segue destination="ZPp-EA-Qyb" kind="presentation" identifier="LoggedInSegue" id="dbr-OV-187"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wex-Az-Axm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="174.96251874062969"/>
+        </scene>
+        <!--My Hikes-->
+        <scene sceneID="m84-Zf-pwC">
+            <objects>
+                <tableViewController id="jXs-Oe-iPj" customClass="DidLoginTableViewController" customModule="TravCo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="HiK-L1-NbI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="Dcx-1M-GTG">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dcx-1M-GTG" id="HyG-PM-HLn">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="jXs-Oe-iPj" id="AOJ-WT-lKQ"/>
+                            <outlet property="delegate" destination="jXs-Oe-iPj" id="piL-gd-tGA"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="My Hikes" id="aoQ-O4-qQb"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yah-NI-YKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1744.8" y="166.8665667166417"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Fte-OX-MBl">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ZPp-EA-Qyb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="3n6-Ng-O8i">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jXs-Oe-iPj" kind="relationship" relationship="viewControllers" id="UDo-tH-JWU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gLX-32-3c8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805.60000000000002" y="166.8665667166417"/>
         </scene>
     </scenes>
 </document>

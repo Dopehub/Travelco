@@ -7,21 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		327C16D082C38DD5C378A309 /* Pods_TravCo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D414FC5BBCA5FA3FCB0CCF32 /* Pods_TravCo.framework */; };
+		FB7D9C131E250F18007405C2 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D9C121E250F18007405C2 /* SignInViewController.swift */; };
+		FB7D9C181E25215D007405C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB7D9C171E25215D007405C2 /* GoogleService-Info.plist */; };
+		FB7D9C1A1E2522DE007405C2 /* DidLoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D9C191E2522DE007405C2 /* DidLoginTableViewController.swift */; };
+		FB7D9C1D1E252398007405C2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D9C1C1E252398007405C2 /* User.swift */; };
+		FB7D9C1F1E2523B7007405C2 /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D9C1E1E2523B7007405C2 /* Hike.swift */; };
 		FB7DD3F31E250DE6003C798C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7DD3F21E250DE6003C798C /* AppDelegate.swift */; };
-		FB7DD3F51E250DE6003C798C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7DD3F41E250DE6003C798C /* ViewController.swift */; };
 		FB7DD3F81E250DE6003C798C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7DD3F61E250DE6003C798C /* Main.storyboard */; };
 		FB7DD3FA1E250DE6003C798C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7DD3F91E250DE6003C798C /* Assets.xcassets */; };
 		FB7DD3FD1E250DE6003C798C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7DD3FB1E250DE6003C798C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D414FC5BBCA5FA3FCB0CCF32 /* Pods_TravCo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravCo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D52B01D264BF2CFFA07B4814 /* Pods-TravCo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravCo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravCo/Pods-TravCo.debug.xcconfig"; sourceTree = "<group>"; };
+		FB7D9C121E250F18007405C2 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		FB7D9C161E251BF2007405C2 /* TravCo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TravCo.entitlements; sourceTree = "<group>"; };
+		FB7D9C171E25215D007405C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FB7D9C191E2522DE007405C2 /* DidLoginTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DidLoginTableViewController.swift; sourceTree = "<group>"; };
+		FB7D9C1C1E252398007405C2 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FB7D9C1E1E2523B7007405C2 /* Hike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
 		FB7DD3EF1E250DE6003C798C /* TravCo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravCo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7DD3F21E250DE6003C798C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FB7DD3F41E250DE6003C798C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FB7DD3F71E250DE6003C798C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB7DD3F91E250DE6003C798C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB7DD3FC1E250DE6003C798C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB7DD3FE1E250DE6003C798C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF86895D7510F4CE06ACC2D1 /* Pods-TravCo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravCo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravCo/Pods-TravCo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +42,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327C16D082C38DD5C378A309 /* Pods_TravCo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		130A149987180106F8D921F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D52B01D264BF2CFFA07B4814 /* Pods-TravCo.debug.xcconfig */,
+				FF86895D7510F4CE06ACC2D1 /* Pods-TravCo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		16198178303632B7DE9BE343 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D414FC5BBCA5FA3FCB0CCF32 /* Pods_TravCo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB7D9C1B1E252378007405C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB7D9C1C1E252398007405C2 /* User.swift */,
+				FB7D9C1E1E2523B7007405C2 /* Hike.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		FB7DD3E61E250DE5003C798C = {
 			isa = PBXGroup;
 			children = (
 				FB7DD3F11E250DE6003C798C /* TravCo */,
 				FB7DD3F01E250DE6003C798C /* Products */,
+				130A149987180106F8D921F1 /* Pods */,
+				16198178303632B7DE9BE343 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +96,26 @@
 		FB7DD3F11E250DE6003C798C /* TravCo */ = {
 			isa = PBXGroup;
 			children = (
+				FB7D9C161E251BF2007405C2 /* TravCo.entitlements */,
 				FB7DD3F21E250DE6003C798C /* AppDelegate.swift */,
-				FB7DD3F41E250DE6003C798C /* ViewController.swift */,
 				FB7DD3F61E250DE6003C798C /* Main.storyboard */,
+				FB7D9C191E2522DE007405C2 /* DidLoginTableViewController.swift */,
+				FB7D9C121E250F18007405C2 /* SignInViewController.swift */,
+				FB7D9C1B1E252378007405C2 /* Model */,
+				FB7DD4041E250E17003C798C /* Supporting files */,
+			);
+			path = TravCo;
+			sourceTree = "<group>";
+		};
+		FB7DD4041E250E17003C798C /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
 				FB7DD3F91E250DE6003C798C /* Assets.xcassets */,
 				FB7DD3FB1E250DE6003C798C /* LaunchScreen.storyboard */,
 				FB7DD3FE1E250DE6003C798C /* Info.plist */,
+				FB7D9C171E25215D007405C2 /* GoogleService-Info.plist */,
 			);
-			path = TravCo;
+			name = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB7DD4011E250DE6003C798C /* Build configuration list for PBXNativeTarget "TravCo" */;
 			buildPhases = (
+				49FBDAEE1366389113D7C657 /* [CP] Check Pods Manifest.lock */,
 				FB7DD3EB1E250DE5003C798C /* Sources */,
 				FB7DD3EC1E250DE5003C798C /* Frameworks */,
 				FB7DD3ED1E250DE5003C798C /* Resources */,
+				D229848EB0CB303E680BDE5D /* [CP] Embed Pods Frameworks */,
+				5D25E3432FBDBBDED78A2508 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -98,6 +155,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 68S8NTUH4E;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -125,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB7DD3FD1E250DE6003C798C /* LaunchScreen.storyboard in Resources */,
+				FB7D9C181E25215D007405C2 /* GoogleService-Info.plist in Resources */,
 				FB7DD3FA1E250DE6003C798C /* Assets.xcassets in Resources */,
 				FB7DD3F81E250DE6003C798C /* Main.storyboard in Resources */,
 			);
@@ -132,13 +195,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49FBDAEE1366389113D7C657 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5D25E3432FBDBBDED78A2508 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravCo/Pods-TravCo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D229848EB0CB303E680BDE5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravCo/Pods-TravCo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FB7DD3EB1E250DE5003C798C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB7DD3F51E250DE6003C798C /* ViewController.swift in Sources */,
+				FB7D9C1F1E2523B7007405C2 /* Hike.swift in Sources */,
+				FB7D9C131E250F18007405C2 /* SignInViewController.swift in Sources */,
+				FB7D9C1D1E252398007405C2 /* User.swift in Sources */,
 				FB7DD3F31E250DE6003C798C /* AppDelegate.swift in Sources */,
+				FB7D9C1A1E2522DE007405C2 /* DidLoginTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,12 +371,14 @@
 		};
 		FB7DD4021E250DE6003C798C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D52B01D264BF2CFFA07B4814 /* Pods-TravCo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TravCo/TravCo.entitlements;
 				DEVELOPMENT_TEAM = 68S8NTUH4E;
 				INFOPLIST_FILE = TravCo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.imadAjallal..TravCo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imadAjallal.TravCo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -270,12 +386,14 @@
 		};
 		FB7DD4031E250DE6003C798C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF86895D7510F4CE06ACC2D1 /* Pods-TravCo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TravCo/TravCo.entitlements;
 				DEVELOPMENT_TEAM = 68S8NTUH4E;
 				INFOPLIST_FILE = TravCo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.imadAjallal..TravCo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imadAjallal.TravCo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -300,6 +418,7 @@
 				FB7DD4031E250DE6003C798C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
