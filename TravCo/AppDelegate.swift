@@ -29,21 +29,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate , GIDSignInDelegate {
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         
         if (error) != nil {
-            // ...
+            print((error?.localizedDescription)!)
             return
         }
         
         guard let authentication = user.authentication else { return }
-        let credential = FIRGoogleAuthProvider.credential(withIDToken: authentication.idToken,
-                                                          accessToken: authentication.accessToken)
+        let credential = FIRGoogleAuthProvider.credential(
+            withIDToken: authentication.idToken,
+            accessToken: authentication.accessToken)
+        
         FIRAuth.auth()?.signIn(with: credential) { (user, error) in
-            // ...
+            
             if  error != nil {
-                // ...
+                print((error?.localizedDescription)!)
                 return
             }
             
-            self.dbref.child("users").child((user?.uid)!).setValue(["username": user?.displayName])
+            let jUser = User(userData: user!)
+            
+            self.dbref.child("users").child(jUser.userUid).setValue(jUser.uploadToJson())
             self.window?.rootViewController?.performSegue(withIdentifier: "LoggedInSegue", sender: nil)
         }
     }

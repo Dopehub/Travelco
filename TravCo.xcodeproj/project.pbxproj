@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		327C16D082C38DD5C378A309 /* Pods_TravCo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D414FC5BBCA5FA3FCB0CCF32 /* Pods_TravCo.framework */; };
+		FB744E001E2854E60036975A /* AddHikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB744DFF1E2854E60036975A /* AddHikeViewController.swift */; };
 		FB7D9C131E250F18007405C2 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D9C121E250F18007405C2 /* SignInViewController.swift */; };
 		FB7D9C181E25215D007405C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB7D9C171E25215D007405C2 /* GoogleService-Info.plist */; };
 		FB7D9C1A1E2522DE007405C2 /* DidLoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7D9C191E2522DE007405C2 /* DidLoginTableViewController.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		D414FC5BBCA5FA3FCB0CCF32 /* Pods_TravCo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravCo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D52B01D264BF2CFFA07B4814 /* Pods-TravCo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravCo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravCo/Pods-TravCo.debug.xcconfig"; sourceTree = "<group>"; };
+		FB744DFF1E2854E60036975A /* AddHikeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddHikeViewController.swift; sourceTree = "<group>"; };
 		FB7D9C121E250F18007405C2 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		FB7D9C161E251BF2007405C2 /* TravCo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TravCo.entitlements; sourceTree = "<group>"; };
 		FB7D9C171E25215D007405C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				FB7D9C161E251BF2007405C2 /* TravCo.entitlements */,
 				FB7DD3F21E250DE6003C798C /* AppDelegate.swift */,
 				FB7DD3F61E250DE6003C798C /* Main.storyboard */,
+				FB744DFF1E2854E60036975A /* AddHikeViewController.swift */,
 				FB7D9C191E2522DE007405C2 /* DidLoginTableViewController.swift */,
 				FB7D9C121E250F18007405C2 /* SignInViewController.swift */,
 				FB7D9C1B1E252378007405C2 /* Model */,
@@ -253,6 +256,7 @@
 				FB7D9C1D1E252398007405C2 /* User.swift in Sources */,
 				FB7DD3F31E250DE6003C798C /* AppDelegate.swift in Sources */,
 				FB7D9C1A1E2522DE007405C2 /* DidLoginTableViewController.swift in Sources */,
+				FB744E001E2854E60036975A /* AddHikeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

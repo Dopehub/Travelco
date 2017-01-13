@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class DidLoginTableViewController: UITableViewController {
-
+    var dbreference : FIRDatabaseReference!
+    var hikes = [Hike]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        dbreference = FIRDatabase.database().reference()
+   
     }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

@@ -43,7 +43,7 @@
             </objects>
             <point key="canvasLocation" x="53.600000000000001" y="174.96251874062969"/>
         </scene>
-        <!--My Hikes-->
+        <!--My hikes-->
         <scene sceneID="m84-Zf-pwC">
             <objects>
                 <tableViewController id="jXs-Oe-iPj" customClass="DidLoginTableViewController" customModule="TravCo" customModuleProvider="target" sceneMemberID="viewController">
@@ -66,11 +66,43 @@
                             <outlet property="delegate" destination="jXs-Oe-iPj" id="piL-gd-tGA"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="My Hikes" id="aoQ-O4-qQb"/>
+                    <navigationItem key="navigationItem" title="My hikes" id="fxa-We-vEB">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="u2y-O6-Lae">
+                            <connections>
+                                <segue destination="gDU-MT-ZcJ" kind="show" identifier="AddHikeSegue" id="SHI-uI-HAn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yah-NI-YKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1744.8" y="166.8665667166417"/>
+            <point key="canvasLocation" x="2684" y="166.8665667166417"/>
+        </scene>
+        <!--Add new Hike-->
+        <scene sceneID="e6z-en-nTM">
+            <objects>
+                <viewController id="gDU-MT-ZcJ" customClass="AddHikeViewController" customModule="TravCo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ijk-jd-dbc"/>
+                        <viewControllerLayoutGuide type="bottom" id="tqa-bJ-Zij"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="piV-ap-coX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add new Hike" id="XS6-Ih-LpG">
+                        <barButtonItem key="backBarButtonItem" title="Cancel" id="HKM-5w-PlI"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="fX6-8K-iLc">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="gDU-MT-ZcJ" id="i9F-JG-cEW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wj4-Pa-990" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3509" y="167"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Fte-OX-MBl">
@@ -78,16 +110,36 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ZPp-EA-Qyb" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="3n6-Ng-O8i">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="jXs-Oe-iPj" kind="relationship" relationship="viewControllers" id="UDo-tH-JWU"/>
+                        <segue destination="GZc-Ng-0wN" kind="relationship" relationship="viewControllers" id="UDo-tH-JWU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gLX-32-3c8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="805.60000000000002" y="166.8665667166417"/>
+        </scene>
+        <!--My Hikes-->
+        <scene sceneID="dOo-Az-PPD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GZc-Ng-0wN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Hikes" id="aoQ-O4-qQb"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Z6P-oJ-PGf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jXs-Oe-iPj" kind="relationship" relationship="rootViewController" id="siV-7R-PGm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4vy-yY-Q5l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1744.8" y="166.8665667166417"/>
         </scene>
     </scenes>
 </document>
