@@ -10,6 +10,8 @@ import UIKit
 import FirebaseDatabase
 
 class DidLoginTableViewController: UITableViewController {
+    
+    // MARK: - Variables
     var dbreference : FIRDatabaseReference!
     var hikes = [Hike]()
     
@@ -18,22 +20,15 @@ class DidLoginTableViewController: UITableViewController {
         dbreference = FIRDatabase.database().reference()
    
     }
-    
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0
     }
-
-
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        
-
         return cell
     }
 }
