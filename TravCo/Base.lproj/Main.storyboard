@@ -36,12 +36,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="ZPp-EA-Qyb" kind="presentation" identifier="LoggedInSegue" id="dbr-OV-187"/>
+                        <segue destination="jXs-Oe-iPj" kind="presentation" identifier="LoggedInSegue1" id="2MR-so-7Oj"/>
+                        <segue destination="gDU-MT-ZcJ" kind="presentation" identifier="LoggedInSegue" id="yxl-9O-qVl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wex-Az-Axm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53.600000000000001" y="174.96251874062969"/>
+            <point key="canvasLocation" x="716" y="122"/>
         </scene>
         <!--My hikes-->
         <scene sceneID="m84-Zf-pwC">
@@ -66,19 +67,14 @@
                             <outlet property="delegate" destination="jXs-Oe-iPj" id="piL-gd-tGA"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My hikes" id="fxa-We-vEB">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="u2y-O6-Lae">
-                            <connections>
-                                <segue destination="gDU-MT-ZcJ" kind="show" identifier="AddHikeSegue" id="SHI-uI-HAn"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <tabBarItem key="tabBarItem" title="My hikes" id="PmG-pA-LHS"/>
+                    <navigationItem key="navigationItem" title="My hikes" id="fxa-We-vEB"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yah-NI-YKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2684" y="166.8665667166417"/>
+            <point key="canvasLocation" x="1658" y="-20"/>
         </scene>
-        <!--Add new Hike-->
+        <!--Item-->
         <scene sceneID="e6z-en-nTM">
             <objects>
                 <viewController id="gDU-MT-ZcJ" customClass="AddHikeViewController" customModule="TravCo" customModuleProvider="target" sceneMemberID="viewController">
@@ -89,57 +85,134 @@
                     <view key="view" contentMode="scaleToFill" id="piV-ap-coX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="From :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPS-h2-UWn">
+                                <rect key="frame" x="54" y="77" width="49" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City of departure" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="alH-4s-pJK">
+                                <rect key="frame" x="111" y="77" width="209" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XF7-vI-zfj">
+                                <rect key="frame" x="54" y="140" width="28" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City of arrival" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cPn-F4-21Y">
+                                <rect key="frame" x="111" y="135" width="209" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="dd/mm/yyyy" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T9H-rF-4E7">
+                                <rect key="frame" x="111" y="197" width="209" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="48V-Jh-e8d">
+                                <rect key="frame" x="167" y="264" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="placeStepper:" destination="gDU-MT-ZcJ" eventType="valueChanged" id="4c1-Tr-RSI"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1Z-lp-uPq">
+                                <rect key="frame" x="54" y="201" width="45" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Places" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HxU-jH-Ip5">
+                                <rect key="frame" x="58" y="268" width="51" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Music :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCv-ei-ZKN">
+                                <rect key="frame" x="54" y="336" width="55" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lMb-SH-ycr">
+                                <rect key="frame" x="271" y="331" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="musicAllowedSwitchFlicked:" destination="gDU-MT-ZcJ" eventType="valueChanged" id="gp4-wu-c4A"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Animals :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vs4-FD-SHB">
+                                <rect key="frame" x="54" y="375" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y0s-au-WXU">
+                                <rect key="frame" x="271" y="370" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="animalsAllowedSwitchFlicked:" destination="gDU-MT-ZcJ" eventType="valueChanged" id="cqe-gA-an0"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="nbr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2h8-v0-PLx">
+                                <rect key="frame" x="282" y="268" width="26" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trc-Zu-ET0">
+                                <rect key="frame" x="197" y="420" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveButtonPressed:" destination="gDU-MT-ZcJ" eventType="touchUpInside" id="GRQ-ef-gZa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLh-dA-UN6">
+                                <rect key="frame" x="184" y="543" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="LogoutPressed:" destination="gDU-MT-ZcJ" eventType="touchUpInside" id="RZj-Ty-Vwv"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Add new Hike" id="XS6-Ih-LpG">
-                        <barButtonItem key="backBarButtonItem" title="Cancel" id="HKM-5w-PlI"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="fX6-8K-iLc">
-                            <connections>
-                                <action selector="saveButtonPressed:" destination="gDU-MT-ZcJ" id="i9F-JG-cEW"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <tabBarItem key="tabBarItem" title="Item" id="YXg-Ox-FJy"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="animalSwitch" destination="y0s-au-WXU" id="igD-YT-Hbw"/>
+                        <outlet property="dateTF" destination="T9H-rF-4E7" id="0PU-6J-eiH"/>
+                        <outlet property="fromCityTF" destination="alH-4s-pJK" id="i3p-zI-ejH"/>
+                        <outlet property="musicSwitch" destination="lMb-SH-ycr" id="E96-Iu-iZR"/>
+                        <outlet property="nbrPlacesLabel" destination="2h8-v0-PLx" id="d4n-fx-zgD"/>
+                        <outlet property="stepperValue" destination="48V-Jh-e8d" id="yvb-YD-Acb"/>
+                        <outlet property="toCityTF" destination="cPn-F4-21Y" id="YV9-um-1NG"/>
+                        <segue destination="ai5-Pf-CXa" kind="presentation" identifier="LoggedOutSegue" id="oCM-d7-dBU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wj4-Pa-990" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3509" y="167"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="Fte-OX-MBl">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ZPp-EA-Qyb" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="3n6-Ng-O8i">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="GZc-Ng-0wN" kind="relationship" relationship="viewControllers" id="UDo-tH-JWU"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gLX-32-3c8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="805.60000000000002" y="166.8665667166417"/>
-        </scene>
-        <!--My Hikes-->
-        <scene sceneID="dOo-Az-PPD">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GZc-Ng-0wN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Hikes" id="aoQ-O4-qQb"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Z6P-oJ-PGf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="jXs-Oe-iPj" kind="relationship" relationship="rootViewController" id="siV-7R-PGm"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4vy-yY-Q5l" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1744.8" y="166.8665667166417"/>
+            <point key="canvasLocation" x="2361" y="660"/>
         </scene>
     </scenes>
 </document>
